@@ -1,0 +1,14 @@
+Open cmd then go to where you put the file 
+_____________________________________________
+
+cd PATH
+
+git clone GIT REPO LINK
+
+
+then install NPM
+____________________
+
+npm i 
+
+

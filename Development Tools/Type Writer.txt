@@ -1,0 +1,31 @@
+For Using React Simple Typewriter
+_____________________________
+
+npm i react-simple-typewriter
+_______________________________________
+
+Then Impor it where you want to use it :
+
+import { Typewriter } from "react-simple-typewriter";
+____________________________________________________
+
+
+Then Use it Where you want to use 
+
+
+<span className="hidden lg:block" style={{ color: "black", fontWeight: "bold" }}>
+            {/* Style will be inherited from the parent element */}
+            <Typewriter
+              words={["Adventure", "Exploration", "Wanderlust", "Discovery"]}
+              loop={""}
+              cursor
+              cursorStyle="✈️"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </span>
+
+
+
+

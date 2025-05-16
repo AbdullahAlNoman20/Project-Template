@@ -1,0 +1,19 @@
+For Using Dynamic Title For Every Page Title:
+______________________________________________________________
+
+npm i react-helmet-async
+
+then in the main.js component: 
+
+import {HelmetProvider } from 'react-helmet-async';
+
+
+<HelmetProvider>
+      <RouterProvider router={router} />
+</HelmetProvider>
+
+then where you use helmate just put it:
+
+<Helmet>
+	<title>Check-In | Home</title>
+</Helmet> 

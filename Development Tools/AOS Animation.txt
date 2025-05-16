@@ -1,0 +1,23 @@
+
+For Using AOS Animetion on your Website You need to:
+________________________________________________________
+
+npm install --save aos@next
+
+
+then Add this on your main.jsx
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
+
+And then you need you use animation just add in your div or p or h tag the nessery code from AOS website 
+
+
+Like:
+
+data-aos="zoom-in"
+data-aos-duration="2000"
+data-aos="fade-right"
+data-aos="fade-left"

@@ -1,0 +1,107 @@
+Swiper Slider Setup
+_________________________________
+npm i swiper
+
+
+then Import it where u want to use slider
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/bundle";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+
+Then Fellow the Demo React File AND add nessesary file like
+___________________________________________________________________
+
+<div className=" p-3 flex flex-col lg:flex-row justify-around items-center gap-5">
+        <div className=" w-1/3 p-3">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex modi at
+          fugiat voluptatem voluptas minus blanditiis, assumenda alias quo
+          beatae libero dolorum aspernatur? Molestiae inventore laboriosam nisi
+          quod voluptatum temporibus!
+        </div>
+
+        <div className=" w-1/2 p-3">
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div
+                className="hero min-h-screen rounded-3xl"
+                style={{
+                  backgroundImage: "url(https://i.ibb.co/R3wqqTW/a.jpg)",
+                }}
+              >
+                <div className="hero-overlay bg-opacity-60 rounded-3xl"></div>
+                <div className="hero-content text-center text-neutral-content">
+                  <div className="max-w-md">
+                    <h1 className="mb-5 text-5xl font-bold">
+                      Discover the Wonders of Asia!
+                    </h1>
+                    <p className="mb-5">
+                      Embark on an unforgettable journey through six captivating
+                      Asian countries. From the vibrant streets of Tokyo to the
+                      ancient temples of Angkor Wat, let us guide you through
+                      the rich tapestry of culture, history, and natural beauty
+                      that Asia has to offer.
+                    </p>
+                    <button className="btn btn-outline btn-warning">
+                      Explore Asia Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                className="hero min-h-screen rounded-3xl"
+                style={{
+                  backgroundImage: "url(https://i.ibb.co/VvR4HB8/b.png)",
+                }}
+              >
+                <div className="hero-overlay bg-opacity-60 rounded-3xl"></div>
+                <div className="hero-content text-center text-neutral-content">
+                  <div className="max-w-md">
+                    <h1 className="mb-5 text-5xl font-bold">
+                      Experience the Diversity of Asia
+                    </h1>
+                    <p className="mb-5">
+                      Dive into a melting pot of cultures, cuisines, and
+                      landscapes across six unique Asian destinations. Whether
+                      you crave the bustling markets of Bangkok or the serene
+                      tranquility of Bali, our expertly crafted tours ensure an
+                      immersive experience like no other.
+                    </p>
+                    <button className="btn btn-outline btn-warning">
+                      Start Your Adventure
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
