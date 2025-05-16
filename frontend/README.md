@@ -1,4 +1,3 @@
-# This Project Has
 
 1. React with React Routing
 2. javascript
